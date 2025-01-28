@@ -1,0 +1,68 @@
+/* style.css */
+body {
+    margin: 0;
+    background: #f0f2f5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.chat-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    min-height: 100vh;
+}
+
+.message {
+    margin: 8px 0;
+    display: flex;
+}
+
+.received {
+    justify-content: flex-start;
+}
+
+.sent {
+    justify-content: flex-end;
+}
+
+.agent {
+    justify-content: center;
+}
+
+.bubble {
+    max-width: 65%;
+    padding: 8px 12px;
+    border-radius: 18px;
+    position: relative;
+    word-break: break-word;
+}
+
+.received .bubble {
+    background: #f0f2f5;
+    margin-left: 8px;
+    border-radius: 0 18px 18px 18px;
+}
+
+.sent .bubble {
+    background: #0084ff;
+    color: white;
+    margin-right: 8px;
+    border-radius: 18px 0 18px 18px;
+}
+
+.agent .bubble {
+    background: #fff4d1;
+    color: #856404;
+    max-width: 50%;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.timestamp {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    display: block;
+    margin-top: 4px;
+}
